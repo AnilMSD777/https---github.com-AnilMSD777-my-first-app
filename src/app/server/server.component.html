@@ -1,1 +1,2 @@
-<button class="btn btn-primary" [disabled]="buttonFlag">Click</button>
+<button class="btn btn-primary" (click)="this.buttonText = 'Button was clickedx'">Click</button>
+<p>{{ buttonText }}</p>

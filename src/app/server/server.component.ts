@@ -5,12 +5,8 @@ import { Component } from "@angular/core";
     templateUrl : './server.component.html'
 })
 export class ServerComponent{
-name:string = 'myServer';
-buttonFlag:boolean = false;
+buttonText:string = 'Button was not clicked';
 ngOnInit(){
-    setTimeout(() => {
-        this.buttonFlag=true;
-    }, 4000);
     
 }
 getName(){
