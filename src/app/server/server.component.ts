@@ -6,6 +6,13 @@ import { Component } from "@angular/core";
 })
 export class ServerComponent{
 name:string = 'myServer';
+buttonFlag:boolean = false;
+ngOnInit(){
+    setTimeout(() => {
+        this.buttonFlag=true;
+    }, 4000);
+    
+}
 getName(){
     return 'this is from getName method';
 }
