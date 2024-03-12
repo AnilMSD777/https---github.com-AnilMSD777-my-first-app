@@ -1,2 +1,5 @@
-<button class="btn btn-primary" (click)="this.buttonText = 'Button was clickedx'">Click</button>
-<p>{{ buttonText }}</p>
+<button class="btn btn-primary" >Click</button>
+<input type="text" (input)="onInputChange($event)">
+<p>{{ "using property binding :" + inputText }}</p>
+<input type="text" [(ngModel)]="inputText2">
+<p>{{ "using 2-way binding :" + inputText2 }}</p>
