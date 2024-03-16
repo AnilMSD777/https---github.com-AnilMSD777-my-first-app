@@ -1,5 +1,11 @@
-<button class="btn btn-primary" >Click</button>
-<input type="text" (input)="onInputChange($event)">
-<p>{{ "using property binding :" + inputText }}</p>
-<input type="text" [(ngModel)]="inputText2">
-<p>{{ "using 2-way binding :" + inputText2 }}</p>
+<div class="container">
+    <div class="row">
+        <button class="btn btn-primary" (click)="clicked()">Display</button>
+    </div>
+    <div class="row">
+        <p *ngIf="buttonClicked; else elseBlock">I am visible now :)</p>
+    </div>
+</div>
+<ng-template #elseBlock>
+    <p>You haven't clicked the butoon yet :(</p>
+</ng-template>
