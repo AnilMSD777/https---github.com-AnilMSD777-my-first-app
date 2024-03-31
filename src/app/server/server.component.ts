@@ -5,8 +5,13 @@ import { Component } from "@angular/core";
     templateUrl : './server.component.html'
 })
 export class ServerComponent{
-    buttonClicked:boolean=false;
-    clicked(){
-        this.buttonClicked = true;
+    serverStatus:string;
+    constructor(){
+        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+    }
+    ngOnInit(){
+    }
+    getStyle(){
+        return this.serverStatus === 'online' ? 'green' : 'red';
     }
 }
