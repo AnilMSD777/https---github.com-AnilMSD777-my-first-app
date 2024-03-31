@@ -1,5 +1,5 @@
 <div class="container">
     <div class="row">
-        <p [ngStyle]="{backgroundColor : getStyle()}"> Server is online</p>
+        <p [ngStyle]="{backgroundColor : getStyle()}" [ngClass]="{customClass : serverStatus === 'online'}"> Server is online</p>
     </div>
 </div>
