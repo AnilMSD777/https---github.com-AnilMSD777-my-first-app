@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './servers.component.css'
 })
 export class ServersComponent {
+  serversList=['Server1','Server2','Server3']
+constructor(){
+  
 
+}
+ngOnInit(){
+
+}
+buttonClicked(){
+  this.serversList.push('Server');
+}
 }

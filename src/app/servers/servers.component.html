@@ -1,2 +1,8 @@
-<app-server></app-server>
-<app-server></app-server>
+<div>
+    <input type="text">
+</div>
+<button class="btn btn-primary" (click)="buttonClicked()"> Add Server</button>
+<div>
+    <app-server></app-server>
+<app-server *ngFor="let server of serversList"></app-server>
+</div>
